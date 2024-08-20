@@ -1,0 +1,33 @@
+.home {
+    display: flex;
+    justify-content: center; /* Horizontal alignment */
+    align-items: center;     /* Vertical alignment */
+    height: 100vh; 
+    flex-direction: column;
+    
+}
+
+.title{
+    font-family: 'Bad Script';font-size: 22px;
+
+}
+
+.add {
+    background-color: rgb(2, 30, 78);
+    color: aliceblue;
+    border-radius: 8px;
+    border: solid 2px black;
+    margin-right: 5px;
+}
+
+.review {
+    background-color: rgb(70, 112, 70);
+    color: aliceblue;
+    border-radius: 8px;
+    border: solid 2px black;
+    
+}
+
+button:hover {
+    transform: scale(1.1);
+}

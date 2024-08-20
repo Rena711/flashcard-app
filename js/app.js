@@ -2,6 +2,7 @@ const term = document.querySelector(".term");
 const definition = document.querySelector(".definition");
 const checkButton= document.querySelector(".check");
 const nextButton= document.querySelector(".next");
+const review= document.querySelector(".review");
 
 const words = {
     one: "1",
@@ -27,3 +28,6 @@ nextButton.addEventListener('click', function() {
     getRandomTerm();
 });
 
+review.addEventListener('click', function() {
+    window.location.href = '../flashcards.html';
+});
