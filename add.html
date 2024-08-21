@@ -12,16 +12,17 @@
         <h1 class="title">add Flashcards</h1>
     </div>
     <div>
-        <textarea name="term" rows="1" cols="45">term</textarea>
+        <textarea id="term" rows="1" cols="45" placeholder="term"></textarea>
     </div>
     <div>
-        <textarea name="def" rows="3" cols="45">definition</textarea>
+        <textarea id="def" rows="3" cols="45" placeholder="definition..."></textarea>
     </div>
     <div class="button">
-        <button class="add" onclick="window.location.href='add.html'">Add</button>
-        <button class="review" onclick="window.location.href='flashcards.html'">Review</button>
+        <button class="addButton">Add flashcard</button>
+        <button class="editButton">Edit</button>
+        <button class="reviewButton" onclick="window.location.href='flashcards.html'">Review</button>
     </div>
     
-    
+    <script src="js/app.js"></script>
 </body>
 </html>

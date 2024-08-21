@@ -27,6 +27,15 @@ body {
     margin-right: 5px;
 }
 
+.editButton {
+    background-color: rgb(158, 173, 83);
+    color: aliceblue;
+    border-radius: 8px;
+    border: solid 2px black;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
 .review {
     background-color: rgb(70, 112, 70);
     color: aliceblue;

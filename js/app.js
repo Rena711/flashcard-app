@@ -1,23 +1,25 @@
-const term = document.querySelector(".term");
-const definition = document.querySelector(".definition");
+const term = document.getElementById("term");
+const def = document.getElementById("def");
+const addButton = document.querySelector(".addButton");
+const reviewButton = document.querySelector(".reviewButton");
 const checkButton= document.querySelector(".check");
 const nextButton= document.querySelector(".next");
 
+let flashcards = JSON.parse(localStorage.getItem('flashcards')) || [];
 
-const words = {
-    one: "1",
-    two: "2",
-    three: "3",
-};
-
-const data = Object.entries(words);
-
-function getRandomTerm(){
-    const randomTerm = data[Math.floor(Math.random() * data.length)];
-    term.innerHTML = `<h3>${randomTerm[0]}</h3>`;
-    definition.innerHTML = `<h3>${randomTerm[1]}</h3>`; 
-};
-
+addButton.addEventListener('click', () => {
+    let tempTerm = term.value.trim();
+    let tempDef = def.value.trim();
+    if(!tempDef || !tempTerm){
+        alert('An error has occurred: Please try again.');
+    } else {
+        flashcards.push({term: tempTerm, def: tempDef});
+        localStorage.setItem('flashcards', JSON.stringify(flashcards));
+        console.log(flashcards); 
+    }
+    tempTerm = "";
+    tempDef = "";
+});
 
 checkButton.addEventListener('click', function() {
     definition.style.display = 'block';

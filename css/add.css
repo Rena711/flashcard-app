@@ -29,7 +29,7 @@ textarea {
     overflow: hidden;
 }
 
-.add {
+.addButton {
     background-color: rgb(2, 30, 78);
     color: aliceblue;
     border-radius: 8px;
@@ -38,10 +38,23 @@ textarea {
     margin-top: 10px;
 }
 
-.review {
+.editButton {
+    background-color: rgb(158, 173, 83);
+    color: aliceblue;
+    border-radius: 8px;
+    border: solid 2px black;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+.reviewButton {
     background-color: rgb(70, 112, 70);
     color: aliceblue;
     border-radius: 8px;
     border: solid 2px black;
     
+}
+
+button:hover {
+    transform: scale(1.1);
 }
