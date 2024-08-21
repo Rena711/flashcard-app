@@ -1,9 +1,17 @@
+body {
+    background-image: url('../bg.avif');
+    background-size: cover; /* This ensures the image covers the entire background */
+    background-repeat: no-repeat; /* This prevents the image from repeating */
+    background-position: center; /* This centers the image on the page */
+}
+
+
 .title {
     text-align: center;
 }
 
 .term {
-    border: solid 5px red;
+    border: solid 3px rgb(92, 91, 91);
     border-radius: 15px;
     text-align: center;
     width: 45%;
@@ -12,12 +20,12 @@
 }
 
 .definition {
-    border: solid 5px blue;
+    border: solid 3px rgb(33, 33, 146);
     border-radius: 15px;
     text-align: center;
     width: 45%;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 60px;
     display: none;
 }
 

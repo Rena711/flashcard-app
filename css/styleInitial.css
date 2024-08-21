@@ -1,3 +1,10 @@
+body {
+    background-image: url('../bg.avif');
+    background-size: cover; /* This ensures the image covers the entire background */
+    background-repeat: no-repeat; /* This prevents the image from repeating */
+    background-position: center; /* This centers the image on the page */
+}
+
 .home {
     display: flex;
     justify-content: center; /* Horizontal alignment */

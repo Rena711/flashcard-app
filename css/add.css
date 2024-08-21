@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center; /* Horizontal alignment */
+    align-items: center;     /* Vertical alignment */
+    height: 79vh; 
+    flex-direction: column;
+    background-image: url('../bg.avif');
+    background-size: cover; /* This ensures the image covers the entire background */
+    background-repeat: no-repeat; /* This prevents the image from repeating */
+    background-position: center; /* This centers the image on the page */
+
+}
+
+.title{
+    font-family: 'Bad Script';font-size: 22px;
+}
+
+textarea {
+    margin: 5px;
+    padding: 5px; /* space inside the textarea */
+    border: 2px solid #ccc; /* border color and thickness */
+    border-radius: 5px; /* rounded corners */
+    font-family: Arial, sans-serif; /* font used in the textarea */
+    font-size: 16px; /* font size */
+    line-height: 1.5; /* line height */
+    color: #333; /* text color */
+    background-color: #f9f9f9; /* background color */
+    resize:none; /* allow the user to resize the textarea */
+    overflow: hidden;
+}
+
+.add {
+    background-color: rgb(2, 30, 78);
+    color: aliceblue;
+    border-radius: 8px;
+    border: solid 2px black;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+.review {
+    background-color: rgb(70, 112, 70);
+    color: aliceblue;
+    border-radius: 8px;
+    border: solid 2px black;
+    
+}
