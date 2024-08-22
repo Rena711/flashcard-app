@@ -5,7 +5,26 @@ body {
     background-position: center; /* This centers the image on the page */
 }
 
+.top {
+    display: flex;
+    align-items: center;
+}
+
+.add-remake {
+    justify-content: flex-end;
+    padding-right: 20px;
+
+}
+
 .title {
+    padding-left: 20px;
+    text-align: left;
+    font-family: 'Bad Script';font-size: 31px;
+    flex-grow: 1;
+    
+}
+
+.counter {
     text-align: center;
     font-family: 'Bad Script';font-size: 22px;
 }
@@ -16,7 +35,7 @@ body {
     text-align: center;
     width: 45%;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .delete{
@@ -32,13 +51,13 @@ body {
     text-align: center;
     width: 45%;
     margin: auto;
-    margin-top: 60px;
+    margin-top: 50px;
     display: none;
 }
 
 .button{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 20px;
 }
 
 button {
@@ -50,3 +69,25 @@ button {
 button:hover {
     transform: scale(1.1);
 }
+
+.add {
+    padding: 5px;
+    border-radius: 15px;
+    margin: 0;
+    background-color: rgb(2, 30, 78);
+    color: aliceblue;
+    border-radius: 8px;
+    border: solid 2px black;
+    margin-right: 5px;
+}
+
+.remakeButton {
+    padding: 5px;
+    border-radius: 15px;
+    margin: 0;
+    background-color: rgb(158, 173, 83);
+    color: aliceblue;
+    border-radius: 8px;
+    border: solid 2px black;
+}
+

@@ -8,8 +8,13 @@
     <link href='https://fonts.googleapis.com/css?family=Bad Script' rel='stylesheet'>
 </head>
 <body onload = "getRandomTerm()">
-    <h1 class="title">my Flashcards</h1>
-
+    <div class="top">
+        <h1 class="title">my Flashcards</h1>
+        <div class="add-remake">
+        <button class="add" onclick="window.location.href='add.html'">Add</button>
+        <button class="remakeButton">Remake</button>
+        </div>
+    </div>
     <div>
         <h1 class="term">term</h1>
     </div>
@@ -17,12 +22,15 @@
     <div>
         <h1 class="definition">definition</h1>
     </div>
-
+    <div>
+        <h1 class="counter"></h1>
+    </div>
     <div class="button">
        <button class="check">check definition</button> 
        <button class="delete">remove</button>
        <button class="next">next definition</button> 
     </div>
+    
     
     <script src="js/app.js"></script>
 </body>

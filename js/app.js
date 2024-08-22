@@ -4,6 +4,7 @@ const reviewButton = document.querySelector(".reviewButton");
 const checkButton= document.querySelector(".check");
 const nextButton= document.querySelector(".next");
 const removeButton= document.querySelector(".delete");
+const counter = document.querySelector(".counter");
 
 let flashcards = JSON.parse(localStorage.getItem('flashcards')) || [];
 
@@ -15,6 +16,7 @@ function getRandomTerm(){
         term.innerHTML = `<h3>${random.term2}</h3>`;
         definition.innerHTML = `<h3>${random.def}</h3>`;
     }
+    counter.innerHTML = `<h4>number of cards: ${flashcards.length}</h4>`;
 };
 
 checkButton.addEventListener('click', function() {
@@ -37,11 +39,21 @@ removeButton.addEventListener('click', function() {
                     flashcards.splice(termNum, 1);
                     // Update localStorage
                     localStorage.setItem('flashcards', JSON.stringify(flashcards));
-                    console.log(flashcards);
                 }
             }
         }
     }
+    if (flashcards.length === 0){
+        term.innerHTML = `<h3>term</h3>`;
+        definition.innerHTML = `<h3>definition</h3>`;
+        counter.innerHTML = `<h4>number of cards: ${flashcards.length}</h4>`;
+    }else{
+        getRandomTerm();
+    }
+
+    
+    
+    
 });
 
 
