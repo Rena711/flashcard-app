@@ -5,6 +5,8 @@ const reviewButton = document.querySelector(".reviewButton");
 const checkButton= document.querySelector(".check");
 const nextButton= document.querySelector(".next");
 
+
+
 let flashcards = JSON.parse(localStorage.getItem('flashcards')) || [];
 
 addButton.addEventListener('click', () => {
@@ -13,10 +15,10 @@ addButton.addEventListener('click', () => {
     if(!tempDef || !tempTerm){
         alert('An error has occurred: Please try again.');
     } else {
-        flashcards.push({term: tempTerm, def: tempDef});
-        localStorage.setItem('flashcards', JSON.stringify(flashcards));
-        console.log(flashcards); 
+        flashcards.push({term2: tempTerm, def: tempDef});
+        localStorage.setItem('flashcards', JSON.stringify(flashcards)); 
     }
     term.value = '';
     def.value = '';
 });
+
