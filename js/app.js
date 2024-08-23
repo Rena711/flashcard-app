@@ -50,10 +50,7 @@ removeButton.addEventListener('click', function() {
     }else{
         getRandomTerm();
     }
-
-    
-    
-    
+   
 });
 
 

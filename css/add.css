@@ -2,7 +2,7 @@ body {
     display: flex;
     justify-content: center; /* Horizontal alignment */
     align-items: center;     /* Vertical alignment */
-    height: 79vh; 
+    height: 100vh; 
     flex-direction: column;
     background-image: url('../bg.avif');
     background-size: cover; /* This ensures the image covers the entire background */
@@ -16,7 +16,7 @@ body {
 }
 
 textarea {
-    margin: 5px;
+    margin-bottom: 5px;
     padding: 5px; /* space inside the textarea */
     border: 2px solid #ccc; /* border color and thickness */
     border-radius: 5px; /* rounded corners */
@@ -25,8 +25,11 @@ textarea {
     line-height: 1.5; /* line height */
     color: #333; /* text color */
     background-color: #f9f9f9; /* background color */
-    resize:none; /* allow the user to resize the textarea */
+    resize:none;
     overflow: hidden;
+    width: 80%;
+    margin-left: 9%;
+    
 }
 
 .addButton {
